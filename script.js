@@ -29,14 +29,14 @@ window.addEventListener("DOMContentLoaded",
             let select = event.target;
             if (select.value == "1") {
                 volume.style.display = "none";
-                rolls.style.display = "none";
+                salut.style.display = "none";
                 result[0].innerHTML = 75 * c[0].value;
                 onePrice = 75;
                 c[0].disabled = false;
             }
             else if (select.value == "2") {
                 volume.style.display = "block";
-                rolls.style.display = "none";
+                salut.style.display = "none";
                 result[0].innerHTML = "";
                 for (const vol of volumeVal) {
                     if (vol.checked) {
@@ -47,7 +47,7 @@ window.addEventListener("DOMContentLoaded",
             }
             else {
                 volume.style.display = "none";
-                rolls.style.display = "block";
+                salut.style.display = "block";
                 result[0].innerHTML = 600 * c[0].value;
                 onePrice = 600;
                 c[0].disabled = false;
