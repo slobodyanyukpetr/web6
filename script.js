@@ -1,6 +1,9 @@
 "use strict";
 
-function calc() {
+
+window.addEventListener("DOMContentLoaded",
+    function (event) {
+    function calc() {
     let price = document.getElementsByName("price");
     let quan = document.getElementsByName("quantity");
     if (/^[1-9]\d*$/.test(price[0].value) && /^[1-9]\d*$/.test(quan[0].value))
@@ -8,8 +11,6 @@ function calc() {
     else
         alert("Введите корректные данные!");
 }
-window.addEventListener("DOMContentLoaded",
-    function (event) {
         let b = document.getElementById("result");
         b.addEventListener("click", calc);
 
