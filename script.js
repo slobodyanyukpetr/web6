@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded",
         let c = document.getElementsByName("colvo");
         let onePrice = 0;
         volume.style.display = "none";
-        rolls.style.display = "none";
+        salut.style.display = "none";
         c[0].disabled = true;
 
         let s = document.getElementsByName("myselect");
